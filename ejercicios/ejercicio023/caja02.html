@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            
+        }
+
+        nav {
+            background-color: grey;
+            padding: 3px;
+            box-shadow: 1px 1px 1px 1px rgb(99, 96, 96);
+        }
+
+        nav > a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 30px;
+
+        }
+        
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px; 
+            border-radius: 10px 10px;
+            box-shadow: 2px 1px rgb(124, 105, 105);
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(141, 138, 138);
+        }
+
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>mi site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>deportes politica tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>noticias sobre brasil</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem voluptates ut autem nihil, tempore obcaecati optio accusantium aliquid ad facilis maxime distinctio quas, facere, quos illum sit sint doloribus soluta!</p>
+                <aside>
+                    <p>articulo escrito por simon bolivar y neutro shorty</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>desenvolvido por el hampa</p>
+    </footer>
+</body>
+</html>

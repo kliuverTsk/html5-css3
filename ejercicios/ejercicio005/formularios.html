@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <header>
+        <h2>habla con nosotros</h2>
+    </header>
+
+    <section>
+
+        <nav>
+            <ul>
+                <li><a href="homepage.html">home</a></li>
+                <li><a href="#cartas">cartas</a></li>
+                <li><a href="#final">final</a></li>
+            </ul>
+        </nav>
+
+        <article>
+
+            <h1>contacto</h1>
+            <p>llena los campos abajo</p>
+            <form method="post">
+
+                <div>
+                    <label for="nombre">nombre</label><br>
+                    <input type="text" name="nombre" id="nombre" placeholder="escribe tu nombre malandro">
+                </div>
+            
+                <div>
+                    <label for="email">email</label><br>
+                    <input type="email" name="email" id="email">
+                </div>
+                                                      
+                <div>                                  
+                    <label for="mensaje">mensaje</label><br>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
+                </div>
+                
+                <div>
+                    <p> 
+                        <label>cual lenguaje prefieres</label>
+                        <input type="radio" name="lenguaje"> html
+                        <input type="radio" name="lenguaje"> css
+                        <input type="radio" name="lenguaje"> javascript
+                    </p>             
+                </div>
+
+                <div>
+                    <p>
+                        <label>cual lenguaje sabes?</label>
+                        <input type="checkbox" name="lenguaje"> html
+                        <input type="checkbox" name="lenguaje"> css
+                        <input type="checkbox" name="lenguaje"> javascript
+                    </p>             
+                </div>
+
+                <div>
+                    <select>
+                        <option value="azul">azul</option>
+                        <option value="verde">verde</option>
+                        <option value="amarillo">amarillo</option>
+                    </select>
+                </div>
+                
+                <input type="submit">
+
+            </form>
+
+        </article>
+
+        <footer>desenvolvido por el ampa</footer>
+    
+    </section>
+</body>
+</html>

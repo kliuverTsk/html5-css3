@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midia en html5</title>
+</head>
+<body>
+    <h1>imagen dinamica</h1>
+    <p>intenta abrir este site en varios dispositivos diferentes
+        o simplemente aumente y disminuya el tamaño de tu navegador 
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagenes/pequeño.png" 
+        type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagenes/mediano.png"
+        type="image/png">
+        <img src="imagenes/grande.png" alt="imagen grande">
+        
+    </picture>
+
+    <h1>repoduciendo audio</h1>
+    <p>vamos aprender a reproducir audios en html5</p>
+    <audio src="midia/wireles.mp3" controls></audio>
+    <h2>forma de  ejecutar un audio compatible con todos los navegadores</h2>
+    <audio controls>
+            <source src="midia/wireles.mp3" type="audio/mpeg">
+            <source src="midia/wireles.wav" type="audio/wav">
+            <source src="midia/wireles.ogg" type="audio/ogg">
+            <p>tu navegador no es compatible <a href="midia/wireles.mp3">clique aqui</a> 
+                para descargar el archivo mp3
+            </p>
+    </audio>
+    
+</body>
+</html>
