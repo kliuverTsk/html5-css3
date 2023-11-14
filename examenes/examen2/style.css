@@ -42,21 +42,31 @@ a:hover {
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
     padding-left: 30px;
+    line-height: 5.5em;
 }
 
-#normal { 
-    
+
+section p {
+    font-family: 'Sriracha',sans-serif;
+    font-size: 48px;
 }
+
 
 section.imagen { 
     background-color: grey;
+    color: white;   
 }
 
 section.imagen > p {
-    width: 300px;
-    background-color: rgba(0, 0, 0, 0.445); 
+    width: 600px;
+    background-color: rgba(0, 0, 0, 0.445);
+    padding: 10px 5px;
+
+}
+
+section#mariquita {
+    background-image: url(imagens/background001.jpg);
 }
 
 footer {
