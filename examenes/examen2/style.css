@@ -50,12 +50,16 @@ section {
 section p {
     font-family: 'Sriracha',sans-serif;
     font-size: 48px;
+    padding-bottom: 2em;
 }
 
 
 section.imagen { 
     background-color: grey;
-    color: white;   
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagen > p {
@@ -65,8 +69,15 @@ section.imagen > p {
 
 }
 
-section#mariquita {
+section#imagen01 {
     background-image: url(imagens/background001.jpg);
+    background-position: right center;
+
+}
+
+section#imagen02 {
+    background-image: url(imagens/background002.jpg);
+    
 }
 
 footer {
