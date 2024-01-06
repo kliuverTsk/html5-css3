@@ -1,1 +1,65 @@
 @charset "UTF-8";
+ 
+
+/*para impresoras*/
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background-image: url(../imagens/back-print.jpg); /*innecesario*/
+    }
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: block;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+    main {
+        border: 2px solid black;
+    }
+}
+
+/* Dispositivos extra pequeños (teléfonos, 600 px y menos)  AQUI  no haremos ya que es la principal y ya esta configurado en general*/
+
+
+/* Dispositivos pequeños (tabletas verticales y teléfonos grandes, 600 px y superiores) */
+@media screen and (min-width: 600px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+
+
+
+/* Dispositivos grandes (portátiles/de escritorio, 992 px y superiores) */
+@media screen and (min-width: 992px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg)
+    }
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: block;}
+    img#tv {display: none;}
+}
+
+/* Dispositivos extra grandes (portátiles y de escritorio grandes o tv(principalmente para tv), 1200 px y superiores) */
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: block;}
+}
