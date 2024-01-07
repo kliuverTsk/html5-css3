@@ -21,13 +21,23 @@ header > h1 {
     padding: 10px;
 }
 
-ol > li {
+ul > li {
     display: inline-block;
     background-color: #585858;
     padding: 11px;
     color: white;
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.402)
 }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: #949494;
+}
+
 
 main {
     background-color: white;

@@ -1,11 +1,24 @@
 @charset "UTF-8";
 /*para computadoras y  pantallas grandes*/
 @media screen and (min-width: 760px) {
-
+   
 }
 /*para tablets y telefonos(configurar la vh y vw)*/
 @media screen and (max-width: 760px) {
    main {
-    max-width: 760px;
-   }
+      width: 90vw;   
+     }
+   
+     menu {
+      display: block;
+     }
+     menu {
+      display: none; 
+     }
+
+     menu a {
+      display: block;
+      
+     }
 }
+   
