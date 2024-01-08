@@ -22,9 +22,7 @@ header > h1 {
 }
 
 ul > li {
-    display: inline-block;
     background-color: #585858;
-    padding: 11px;
     color: white;
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.402)
 }
@@ -38,7 +36,9 @@ li:hover {
     background-color: #949494;
 }
 
-
+i#burguer {
+    display: none;
+}
 main {
     background-color: white;
     margin: auto;

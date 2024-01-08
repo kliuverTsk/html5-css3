@@ -2,6 +2,13 @@
 /*para computadoras y  pantallas grandes*/
 @media screen and (min-width: 760px) {
    
+   ul li {
+      display: inline-flex;
+   }
+   menu a {
+      padding: 10px;
+   }
+
 }
 /*para tablets y telefonos(configurar la vh y vw)*/
 @media screen and (max-width: 760px) {
@@ -9,16 +16,34 @@
       width: 90vw;   
      }
    
-     menu {
-      display: block;
+     
+   menu {
+      display: none;
+      text-align: center;
      }
-     menu {
-      display: none; 
+   
+   a {
+      display: block;
+      padding: 10px; 
+   }
+   
+   ul li {
+      list-style: none;
+      
+   }
+
+   i#burguer {
+      background-color: rgba(48, 48, 48);
+      color: white;
+      display: block;
+      text-align: center;
+      padding: 10px;
+      cursor: pointer;
      }
 
-     menu a {
-      display: block;
-      
-     }
+   i#burguer:hover {
+      color: black;
+      background-color: white;
+   }
 }
    
