@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos/geral.css">
     <link rel="stylesheet" href="estilos/telas.css">
 </head>
-<body>
+<body onresize="mudoutamanho()">
     <header>
         <h1>Meu Site</h1>
          <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
@@ -32,6 +32,16 @@
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum assumenda veritatis, quia unde animi nesciunt ratione quos esse accusantium, sed cum asperiores. Quo harum, sed modi porro alias adipisci voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iste ea, consequatur enim molestias reiciendis facere deleniti libero sunt, quam expedita! Iste voluptatibus repellat eius sequi aut voluptate placeat voluptatum.</p>
     </main>
     <script>
+        function mudoutamanho() {
+            if (window.innerWidth >= 760){
+                itens.style.display = 'block'
+            }else {
+                itens.style.display = 'none'
+            }
+            
+        }
+       
+
         function clickMenu() {
             
             if (itens.style.display =='block'){

@@ -8,6 +8,9 @@
    menu a {
       padding: 10px;
    }
+   i#burguer {
+      display: none;
+   }
 
 }
 /*para tablets y telefonos(configurar la vh y vw)*/
